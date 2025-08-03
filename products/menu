@@ -1,0 +1,61 @@
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'rest_framework',
+    'account',
+    'home',
+    'orders',
+    'products', 
+]
+
+
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/products/', include('products.urls')),
+    path('api/orders/', include('orders.urls'))
+]
+
+from rest_framework import serializers
+class MenuItemSerializer(serializers.Serializer):
+    name = serializers.CharField(max_length=100)
+    description = serializers.CharField()
+    price = serializers.DecimalField(max_digits=6, decimal_places=2)
+
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from .serializers import MenuItemSerializer
+class MenuView(APIView):
+    def get(self, request):
+        menu_data = [
+            {
+                "name": "Grilled Salmon",
+                "description": "Fresh salmon fillet with a lemon-dill sauce and roasted asparagus.",
+                "price": 24.99
+            },
+            {
+                "name": "Mushroom Risotto",
+                "description": "Creamy Arborio rice with wild mushrooms, truffle oil, and parmesan cheese.",
+                "price": 18.50
+            },
+            {
+                "name": "Chocolate Lava Cake",
+                "description": "Warm chocolate cake with a molten center, served with a scoop of vanilla ice cream.",
+                "price": 9.25
+            },
+        ]
+        serializer = MenuItemSerializer(menu_data, many=True)
+        return Response(serializer.data)
+
+from django.urls import path
+from .views import MenuView
+
+urlpatterns = [
+    path('menu/', MenuView.as_view(), name='menu-list'),
+]
