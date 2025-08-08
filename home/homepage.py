@@ -73,25 +73,25 @@ urlpatterns = [
             background-color: #f3f4f6;
         }
         .container{
-            padding: 2.5rem;
-            margine-top:2rem;
-            margin-bottom:2rem;
-            border-radius:1rem;
-            box-shadow:0 10px 25px rgba(0,0,0,0.1);
+            padding : 2.5rem;
+            margin-top : 2rem;
+            margin-bottom : 2rem;
+            border-radius : 1rem;
+            box-shadow : 0 10px 25px rgba(0,0,0,0.1);
         }
-        h1,h2{
-            color:#2c3e50;
+        h1,h2 {
+            color : #2c3e50;
         }
         .text-blue-600{
-            color:#3498db;
+            color : #3498db;
             }
-        .bg-gray-50{
-            background-color:#fdfefe;
-            transition: transform 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+        .bg-gray-50 {
+            background-color : #fdfefe;
+            transition : transform 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
         }
-        .bg-gray-50:hover{
-            transform:translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1)
+        .bg-gray-50:hover {
+            transform : translateY(-5px);
+            box-shadow : 0 15px 30px rgba(0,0,0,0.1)
         }
     </style>
 </head>
