@@ -84,7 +84,7 @@ urlpatterns = [
         }
         .text-blue-600{
             color : #3498db;
-            }
+        }
         .bg-gray-50 {
             background-color : #fdfefe;
             transition : transform 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
