@@ -81,6 +81,8 @@ urlpatterns = [
         }
         h1,h2 {
             color : #2c3e50;
+            text-align:center;
+            margin-bottom:30px
         }
         .text-blue-600{
             color : #3498db;
