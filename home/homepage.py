@@ -112,6 +112,7 @@ urlpatterns = [
                <p class="text-gray-600 mt-4">
                Phone:<a href="tel:7981265232" class="text-blue-600 hover:underline">(555) 123-4567</a>
                </p>
+               
             </div>
             <div class="md:w-1/2 rounded-lg overflow-hidden border border-gray-200">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.242777134375!2d-122.41941568468165!3d37.7749294797585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064d42e616f%3A0x1d542d99d3d3a0c7!2sSan%20Fransisco%2C%20CA!5e0!3m2!1sen!2sus!4v1625078400000!5m2!1sen!2sus" width="100%" height="300" allowfullscreen"" loading="lazy"></iframe>
