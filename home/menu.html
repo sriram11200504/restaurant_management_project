@@ -47,5 +47,11 @@
         <a href="#" class="nav-link">view our menu</a>
         <a href="#" class="nav-link" style="margin-left:15px;">learn about us</a>
     </div>
+    <div style="text-align:center; margin-bottom:30px;">
+        <form action="{%url 'menu-page'%}" method="get" style="display:inline-flex;border:1px solid #ccc; border-radius:5px;overflow:hidden;">
+            <input type="search" name="q" placeholder="Search menu items">
+            <button type="submit">search</button>
+        </form>
+    </div>
 </body>
 </html>
