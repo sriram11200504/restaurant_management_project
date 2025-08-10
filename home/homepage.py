@@ -109,7 +109,7 @@ urlpatterns = [
                united states 
                </address>
                <p class="text-gray-600 mt-4">
-               Phone:<a href="tel:555-123-4567" class="text-blue-600 hover:underline">(555) 123-4567</a>
+               Phone:<a href="tel:7981265232" class="text-blue-600 hover:underline">(555) 123-4567</a>
                </p>
             </div>
             <div class="md:w-1/2 rounded-lg overflow-hidden border border-gray-200">
