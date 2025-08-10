@@ -43,6 +43,7 @@ def home(request):
     Renders the homepage and fetches menu data from our API.
     """
     menu_data = []
+    
     try:
         response = requests.get('http://127.0.0.1:8000/api/products/menu/')
         if response.status_code == 200:
