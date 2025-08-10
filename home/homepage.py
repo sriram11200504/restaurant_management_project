@@ -105,7 +105,7 @@ urlpatterns = [
                <p class="text-lg font-semibold text-gray-800">Our Location</p>
                <address class="noy-italic text-gray-600 mt-2">
                123 main street<br>
-               anytown,CA 90210<br>
+               new york,CA 90210<br>
                united states 
                </address>
                <p class="text-gray-600 mt-4">
