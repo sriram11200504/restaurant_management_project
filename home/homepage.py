@@ -75,6 +75,7 @@ urlpatterns = [
         h1{
             color:red;
         }
+        
     </style>
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
