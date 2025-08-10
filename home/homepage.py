@@ -11,7 +11,6 @@ INSTALLED_APPS = [
     'orders',
     'products',
 ]
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
