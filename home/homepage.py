@@ -99,7 +99,7 @@ urlpatterns = [
         </div>
     </div>
     <div class="container mx-auto p-8 bg-white rounded-xl shadow-lg max-w-4xl">
-        <h2>Find Us</h2>
+        <h2>contact us</h2>
         <div class="flex flex-col md:flew-row gap-6">
             <div class="md:w-1/2 p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
                <p class="text-lg font-semibold text-gray-800">Our Location</p>
