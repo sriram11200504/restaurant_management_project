@@ -72,6 +72,9 @@ urlpatterns = [
             font-family: 'Inter', sans-serif;
             background-color: #f3f4f6;
         }
+        h1{
+            color:red;
+        }
     </style>
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
