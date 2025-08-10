@@ -119,5 +119,6 @@ urlpatterns = [
     </div>
     <footer>
     &copy;{{restaurant_name}}. ALL RIGHTS RESERVED.
+    </footer>
 </body>
 </html>
