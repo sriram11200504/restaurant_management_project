@@ -16,6 +16,7 @@ class Order(models.Model):
     created_At=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
 
+
     def __str__(self):
         return f"order #{self.id} by {self.customer.username}"
 class Feedback(models.Model):
