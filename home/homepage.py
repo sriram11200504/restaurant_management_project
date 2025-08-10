@@ -80,6 +80,7 @@ urlpatterns = [
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="container mx-auto p-8 bg-white rounded-xl shadow-lg max-w-4xl">
     <img src="https://img.freepik.com/premium-vector/restaurant-logo-design-template_79169-56.jpg?w=2000"/>
+    
         <h1 class="text-4xl font-extrabold text-center text-gray-900 mb-8">Restaurant Menu</h1>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
