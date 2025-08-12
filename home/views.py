@@ -27,4 +27,20 @@ def reservations_view(request):
         'restaurant_name': settings.RESTAURANT_NAME
     }
     return render(request,'home/reservation.html',context)
-
+def feedback_form_view(request):
+    context={
+        'restaurant_name': settings.RESTAURANT_NAME
+    }
+    return render(request,'home/feedback_form.html',context)
+def menu_page_view(request):
+    search_query=request.GET.get('q','')
+    if search_query:
+        menu_items=MenuItem.objects.filter(name__icontains=search_query).order_by('name')
+    else:
+        menu_items=MenuItem.objects.all().order_by('name')
+    context={
+        'restaurant_name': settings.RESTAURANT_NAME,
+        'menu_items':menu_items,
+        'search_query':search_query
+    }
+    return render(request,'home/menu.html',context)
