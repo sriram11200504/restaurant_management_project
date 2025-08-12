@@ -41,6 +41,7 @@ def menu_page_view(request):
     context={
         'restaurant_name': settings.RESTAURANT_NAME,
         'menu_items':menu_items,
+        
         'search_query':search_query
     }
     return render(request,'home/menu.html',context)
