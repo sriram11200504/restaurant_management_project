@@ -79,7 +79,7 @@ def contact_view(request):
                     'restaurant_name': settings.RESTAURANT_NAME
                 })
         else:
-            return render(request,'home/contact_form.html'{
+            return render(request,'home/contact_form.html',{
                 'form':ContactForm(),
                 'restaurant_name':settings.RESTAURANT_NAME
             })
