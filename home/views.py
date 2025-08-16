@@ -1,6 +1,8 @@
 import requests
 from django.shortcuts import render
 from django.conf import settings
+import datetime
+
 def home(request):
     menu_data=[]
     try:
@@ -33,6 +35,7 @@ def feedback_form_view(request):
     }
     return render(request,'home/feedback_form.html',context)
 def menu_page_view(request):
+    current_datetime=datetime.datetime.now()
     search_query=request.GET.get('q','')
     if search_query:
         menu_items=MenuItem.objects.filter(name__icontains=search_query).order_by('name')
@@ -42,7 +45,8 @@ def menu_page_view(request):
         'restaurant_name': settings.RESTAURANT_NAME,
         'menu_items':menu_items,
         
-        'search_query':search_query
+        'search_query':search_query,
+        'current_datetime':current_datetime,
     }
 def contact_view(request):
     if request.method=="POST":
