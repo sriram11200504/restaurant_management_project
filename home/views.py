@@ -95,3 +95,8 @@ def contact_view(request):
         })
 
     return render(request,'home/menu.html',context)
+def faq_view(request):
+    context={
+        'restaurant_name':settings.RESTAURANT_NAME
+    }
+    return render(request,'home/faq.html',context)
