@@ -56,7 +56,6 @@ def contact_view(request):
             email=form.cleaned_data['email']
             subject=form.cleaned_data['subject']
             message=form.cleaned_data["message"]
-
             email_subject=f"contact form submission:{subject}"
             email_body= f"name: {name if name else 'Ananimous'}\n" \
                         f"email: {email}\n" \
