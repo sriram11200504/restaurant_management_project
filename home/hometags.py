@@ -32,8 +32,10 @@ def get_breadcrumbs(context):
         elif part='faq':
             name='FAQ'
             url=reverse('faq')
-        else:
-            url=current_path
+        elif part=='privacy':
+            name='privacy policy'
+            url=reverse('privacy_policy')
+            except NoReverser:pass
         
         if part !='' and part!='home':
             if not breadcrumbs or breadcrumbs[-1]['name']!=name:
