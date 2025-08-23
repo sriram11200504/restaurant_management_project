@@ -99,3 +99,8 @@ def faq_view(request):
         'restaurant_name':settings.RESTAURANT_NAME
     }
     return render(request,'home/faq.html',context)
+def privacy_policy_view(request):
+    context={
+        'restaurant_name':settings.RESTAURANT_NAME
+    }
+    return render(request,'home/privacy_policy.html',context)
