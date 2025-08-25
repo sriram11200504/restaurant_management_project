@@ -42,6 +42,8 @@ def get_breadcrumbs(context):
                 breadcrumbs.append({'name':name,'url':url})
         if part=='home' or i==0:
             continue
+        else:
+            return home
         
     if breadcrumbs.request.path.strip('/')==path_parts[-1] and len(breadcrumbs)>1:
         breadcrumbs[-1]['url']=None
