@@ -104,3 +104,8 @@ def privacy_policy_view(request):
         'restaurant_name':settings.RESTAURANT_NAME
     }
     return render(request,'home/privacy_policy.html',context)
+def thankyou(request):
+    context={
+         restaurant_name:settings.RESTAURANT_NAME
+    }
+    return render(request)
