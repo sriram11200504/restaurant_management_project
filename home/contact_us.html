@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <class="container">
+            <h1>Give your feedback for {{Restaurant_name}}</h1>
+            <p>we value your feedback and ;ove to know your experience</p>
+            { % if success message % }
+              <div class="message-box success">{{success_message}}</div>
+            {% endif % }
+            { % if error_message %}
+              <div class="message-box error">{{error_message}}</div>
+            { % endif %}
+            <form id="FeedbackForm" method="post" action="{% url 'feedback' %}">
+                {% csrf_token %}
+                <div>
+                    <label for="form.customer_name.id_for_label">your name</label>
+                    {{form.customer_name}}
+                </div>
+                <div>
+                    <label for="form.customer_email.id_for_label">your email</label>
+                    {{form.customer_email}}
+                </div>
+                <div>
+                    <label for="for.comments.id_for_label">comments</label>
+                    {{form.comments}}
+                </div>
+                <button type="submit">submit</button>
+            </form>
+            
+
