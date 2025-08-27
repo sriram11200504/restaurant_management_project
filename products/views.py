@@ -13,6 +13,8 @@ NOTE: Conside this as a reference and follow this same coding structure or forma
 # Create your views here.
 class ItemView(APIView):
 
+
+    
     def get(self, request):
         items = Item.objects.all()
         serializer = ItemSerializer(items, many=True)
