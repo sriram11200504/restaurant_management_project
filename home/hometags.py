@@ -48,5 +48,11 @@ def get_breadcrumbs(context):
     if breadcrumbs.request.path.strip('/')==path_parts[-1] and len(breadcrumbs)>1:
         breadcrumbs[-1]['url']=None
     return {'breadcrumbs':breadcrumbs}
+@register.filter
+def coming_soon(is_available):
+    if not is_available:
+        return "Coming Soon"
+    else:
+        return ""
     
 
