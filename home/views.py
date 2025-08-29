@@ -2,6 +2,7 @@ import requests
 from django.shortcuts import render
 from django.conf import settings
 import datetime
+from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
 
 def home(request):
     menu_data=[]
@@ -62,6 +63,7 @@ def menu_page_view(request):
         'search_query':search_query,
         'page_obj':page_obj
     }
+    return render(request,'home/menu.html',context)
 def contact_view(request):
     if request.method=="POST":
         form=ContactForm(request.POST)
