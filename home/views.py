@@ -48,6 +48,20 @@ def menu_page_view(request):
         'search_query':search_query,
         'current_datetime':current_datetime,
     }
+    paginator=paginator(menu_item_list,6)
+    page_number=request.GET.get('page')
+    try:
+        page_obj=paginator.page(page_number)
+    except PageNotAnInteger:
+        page_obj=paginator.page(1)
+    except emptypage:
+        page_obj=paginator.page(paginator.num_pages)
+    context={
+        'restaurant_name':settings.RESTAURANT_NAME,
+        'menu_items':page_obj,
+        'search_query':search_query,
+        'page_obj':page_obj
+    }
 def contact_view(request):
     if request.method=="POST":
         form=ContactForm(request.POST)
