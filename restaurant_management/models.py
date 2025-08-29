@@ -11,6 +11,10 @@ opening_hours=models.JSONField(
     null=True
 )
 created_at=models.DateTimeField(auto_now_add=True)
+class Chef(models.Model):
+    name=models.CharField(max_length=20)
+    description=models.TextField(null=False)
+    origin=models.CharField(max_length=20)
 class Meta:
     verbose_name='Restaurant'
     verbose_name_plural='Restaurants'
