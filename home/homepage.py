@@ -141,7 +141,7 @@ urlpatterns = [
             </div>
         </div>
     </div>
-    <footer>
+    <footer bg-color="palewhite">
     &copy;{{restaurant_name}}. ALL RIGHTS RESERVED.
     </footer>
 </body>
