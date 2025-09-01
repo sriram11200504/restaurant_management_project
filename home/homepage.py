@@ -122,7 +122,7 @@ urlpatterns = [
         <h2>contact us</h2>
         <div class="flex flex-col md:flew-row gap-6">
             <div class="md:w-1/2 p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
-               <p class="text-lg font-semibold text-gray-800">Our Location</p>
+               <p class="text-lg font-semibold text-gray-800" style="color:red;">Our Location</p>
                <address class="noy-italic text-gray-600 mt-2">
                123 main street<br>
                new york,CA 90210<br>
