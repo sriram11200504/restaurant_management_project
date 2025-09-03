@@ -5,6 +5,20 @@ import datetime
 from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
 
 def home(request):
+    news_letter_form=newsletterform(request.POST or None)
+    if request.method='POST' and news_letter_form.is_valid():
+        try:
+            news_letter_form.save()
+            messages.success(request,"Thank you for subscribing")
+        except:
+            messages.error(request,"this email is already subscribed")
+        return redirect('home')
+
+
+
+
+
+
     menu_data=[]
     try:
         response=requests.get('http://127.0.0.1:8000/api/products/menu-items/')
