@@ -94,7 +94,7 @@ urlpatterns = [
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="container mx-auto p-8 bg-white rounded-xl shadow-lg max-w-4xl">
-   <a href="#"><img src="https://img.freepik.com/premium-vector/restaurant-logo-design-template_79169-56.jpg?w=2000"/></a>
+   <a href="#"><img src="https://img.freepik.com/premium-vector/restaurant-logo-design-template_79169-56.jpg?w=2000" alt="logo"/></a>
     <div>
        <h1>Welcome to the HomeFoods Restaurant where you''ll find the flavor of your home</h1>
     </div>
