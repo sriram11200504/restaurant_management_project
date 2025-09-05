@@ -6,5 +6,5 @@ urlpatterns = [
     path('our_story/',views.our_story_view,name="our_story"),
     path('reservation/',views.reservations_view,name="reservation"),
     path('feedback_form/',views.feedback_form_view,name="feedback"),
-    
+    path('menupage')
 ]
