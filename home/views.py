@@ -18,11 +18,6 @@ def home(request):
             messages.error(request,"this email is already subscribed")
         return redirect('home')
 
-
-
-
-
-
     menu_data=[]
     try:
         response=requests.get('http://127.0.0.1:8000/api/products/menu-items/')
@@ -43,6 +38,11 @@ def about_view(request):
         'restaurant_name': settings.RESTAURANT_NAME
     }
     return render(request,'home/about.html',context)
+def our_story_view(request):
+    context={
+        "restaurant_name":settings.RESTAURANT_NAME
+    }
+    return render(request,"home/our_story.html",context)
 def reservations_view(request):
     context={
         'restaurant_name': settings.RESTAURANT_NAME
