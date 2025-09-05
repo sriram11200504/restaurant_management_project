@@ -2,6 +2,10 @@ import requests
 from django.shortcuts import render
 from django.conf import settings
 import datetime
+from django.db.models import Q 
+from django.core.mail import send_mail
+from .forms import ContactForm
+from django.contrib import messages
 from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
 
 def home(request):
@@ -138,4 +142,4 @@ def thankyou(request):
     context={
          restaurant_name:settings.RESTAURANT_NAME
     }
-    return render(request)
+    return render(request,"home/thankyou.html",context)
