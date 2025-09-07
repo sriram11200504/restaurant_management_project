@@ -14,7 +14,7 @@ def home(request):
     if request.method='POST' and news_letter_form.is_valid():
         try:
             news_letter_form.save()
-            messages.success(request,"Thank you for subscribing")
+            messages.success(request,"Thank you for subscribing our page")
         except:
             messages.error(request,"this email is already subscribed")
         return redirect('home')
