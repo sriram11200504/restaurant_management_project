@@ -96,6 +96,7 @@ def contact_view(request):
                         f"email: {email}\n" \
                         f"subject: {subject}\n" \
                         f"message: {message}\n" \
+            opening_hours=[]
             try:
                 send_mail(
                     email_subject,
