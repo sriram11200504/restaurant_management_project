@@ -16,7 +16,7 @@ def home(request):
             news_letter_form.save()
             messages.success(request,"Thank you for subscribing our page")
         except:
-            messages.error(request,"this email is already subscribed")
+            messages.error(request,"this email is already subscribed by you")
         return redirect('home')
 
     menu_data=[]
