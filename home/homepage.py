@@ -144,6 +144,7 @@ urlpatterns = [
     <footer bg-color="palewhite">
     &copy;<span id="Current-Year"></span>{{restaurant_name}}. ALL RIGHTS RESERVED.
     <a href="policypage.html">terms of service</a>
+    <a href="https://instagram.com"><instagram</a>
     </footer>
     <script> 
     document.getElementById("Current-Year").innerHTML=new Date().getFullYear();
