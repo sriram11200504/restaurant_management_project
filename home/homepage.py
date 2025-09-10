@@ -87,7 +87,7 @@ urlpatterns = [
             background-color:#ff6347;
             color:white;
             padding:15px 30px;
-            
+            border:2px solid orange;
         }
         
     </style>
