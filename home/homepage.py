@@ -143,6 +143,7 @@ urlpatterns = [
     </div>
     <footer bg-color="palewhite">
     &copy;<span id="Current-Year"></span>{{restaurant_name}}. ALL RIGHTS RESERVED.
+    <a href="policypage.html">terms of service</a>
     </footer>
     <script> 
     document.getElementById("Current-Year").innerHTML=new Date().getFullYear();
